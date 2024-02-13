@@ -1,16 +1,23 @@
+// Exercicip 1
 fun main() {
-    print("Hello World sem o LN")
-    println("Hello World")
+    val morningNotification = 51
+    val eveningNotification = 135
 
-
-    var test2  = 3
-    val test = 123
-
-    println(test2)
-    test2 = 4
-
-    println(test2)
-
-    // PrintLN é linha!
+    printNotificationSummary(morningNotification)
+    printNotificationSummary(eveningNotification)
 }
+
+fun printNotificationSummary(numberOfMessages: Int) {
+    // O numero exato de notificaces se for menor que 100
+
+    if (numberOfMessages <= 100) {
+        println("You have $numberOfMessages notifications.")
+    } else {
+        println("Your phone is blowing up! You have 99+ notifications.")
+    }
+}
+
+// Exercicip 2
+
+
 
